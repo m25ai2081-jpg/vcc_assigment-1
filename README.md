@@ -1,5 +1,6 @@
 # vcc_assigment-1
 Setup & Deployment
+
 1️⃣ Update System
 sudo apt update
 
@@ -23,7 +24,6 @@ npm init -y
 npm install express
 
 6️⃣ Create Application (app.js)
-
 
 7️⃣ Start the Microservice
 node app.js
