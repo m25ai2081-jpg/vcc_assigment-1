@@ -1,10 +1,10 @@
-# vcc_assigment-1
+# VCC_Assignment-1
 Setup & Deployment
 
-1️⃣ Update System
+**1.** Update System
 sudo apt update
 
-2️⃣ Install Node.js and npm
+**2️.** Install Node.js and npm
 sudo apt install -y nodejs npm
 
 
@@ -13,54 +13,46 @@ Verify installation:
 node -v
 npm -v
 
-3️⃣ Create Project Directory
+**3️.** Create Project Directory
 mkdir microservice
 cd microservice
 
-4️⃣ Initialize Node.js Project
+**4️.** Initialize Node.js Project
 npm init -y
 
-5️⃣ Install Dependencies
+**5️.** Install Dependencies
 npm install express
 
-6️⃣ Create Application (app.js)
+**6️.** Create Application (app.js)
 
-7️⃣ Start the Microservice
+**7️.** Start the Microservice
 node app.js
 
 
 Service will run on port 3000.
-
-🧪 Testing the API
-✅ Test on VM-1 (Local)
-
+ Testing the API
+ Test on VM-1 (Local)
 Install curl if needed:
-
 sudo apt-get install curl
-
 curl http://localhost:3000/api/hello
 
-
-Expected output:
+**Expected output:**
 
 {
   "message": "Hello from VM-1"
 }
 
-🌐 Test from VM-2 (Remote)
-
+Test from VM-2 (Remote)
 Use VM-1’s IP address:
-
 curl http://<VM-1-IP>:3000/api/hello
 
 
 Expected output:
-
 {
   "message": "Hello from VM-1"
 }
 
-🌐 Network Configuration
+**Network Configuration:**
 
 Both VMs must be connected to the same NAT Network
 
@@ -68,7 +60,7 @@ VM-1 must expose port 3000
 
 IP address of VM-1 should be reachable from VM-2
 
-✅ Result
+ **Result:**
 
 Microservice successfully deployed on VM-1
 
